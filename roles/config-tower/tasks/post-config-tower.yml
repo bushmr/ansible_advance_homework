@@ -4,8 +4,6 @@
     description: "Homework Assignment Project"
     organization: "Default"
     state: present
-    #tower_config_file: "~/tower_cli.cfg"
-# Use tower module or tower-cli to create Ansible Tower project. Name of the project is specifed in ./vars/main.yml
 
 - name: Machine Credential to connect to workstation using openstack.pub
   tower_credential:
