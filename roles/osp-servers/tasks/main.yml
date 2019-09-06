@@ -2,6 +2,23 @@
 
 # tasks file for osp.servers
 - name: Create new server instances and attaches them a network and passes metadata to the instance
+os_server:
+  state: present
+  auth_url: 
+  username: 
+  password:
+    name: vm1
+    image: 
+    key_name:
+      timeout: 200
+      flavor: m2.small
+      nics:
+        - net-id:
+        - net-name: 
+    meta:
+       hostname: 
+       group: 
+
 
 
 - name: Add floating IP to Servers
